@@ -1,0 +1,35 @@
+FURORA – IMAGE NAMES
+Put every image in the folder shown, with exactly this name. All lowercase, .jpg.
+If a file is missing, the site shows a placeholder, so you can add them one at a time.
+Suggested sizes: product, shop, swap, dog and breed photos 800 x 600 px; hero photos 1000 x 1250 px; vets 600 x 600 px.
+
+img/hero/
+  welcome.jpg        sign-up page photo
+  about.jpg          About page photo
+
+img/breeds/          (also used on the home page and pet profile)
+  samoyed.jpg  siberian-husky.jpg  labrador-retriever.jpg  golden-retriever.jpg
+  german-shepherd.jpg  border-collie.jpg  beagle.jpg  poodle.jpg  bulldog.jpg
+  dachshund.jpg  pomeranian.jpg  shih-tzu.jpg  rottweiler.jpg  boxer.jpg  mixed-breed.jpg
+
+img/vets/
+  vet1.jpg  (Dr. Elena Petrovska)    vet2.jpg  (Dr. Marko Stojanov)    vet3.jpg  (Dr. Ana Trajkovska)
+
+img/shops/           (shop cards on the Shop page)
+  paws-co.jpg   happy-tail.jpg   furry-friends.jpg   wagging-tails.jpg   pet-corner.jpg
+
+img/products/        (shop name, then product number 1 to 4 in the order they appear)
+  paws-co-1.jpg ... paws-co-4.jpg
+  happy-tail-1.jpg ... happy-tail-4.jpg
+  furry-friends-1.jpg ... furry-friends-4.jpg
+  wagging-tails-1.jpg ... wagging-tails-4.jpg
+  pet-corner-1.jpg ... pet-corner-4.jpg
+
+img/swap/            (the five example swap items, in the order they appear)
+  swap-1.jpg  swap-2.jpg  swap-3.jpg  swap-4.jpg  swap-5.jpg
+
+img/dogs/            (adoption page sample dogs)
+  luna.jpg  bruno.jpg  nika.jpg
+
+img/                 (Sustainable Development Goal paws)
+  sdg3.jpg  sdg8.jpg  sdg9.jpg  sdg11.jpg  sdg12.jpg  sdg13.jpg  sdg15.jpg  sdg17.jpg

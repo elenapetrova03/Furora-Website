@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Furora – image check</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:760px;margin:30px auto;padding:0 20px}li{list-style:none;padding:2px 0}.ok{color:#14532d}.no{color:#8a5a00}code{background:#eef3fc;padding:1px 6px;border-radius:6px}</style></head><body>
+<h1>Image check</h1><p>Open this page from the same folder as <code>index.html</code>. A green tick means the image was found. An amber dash means the name or folder doesn’t match yet.</p><ul id="l"></ul>
+<script>
+const B="samoyed siberian-husky labrador-retriever golden-retriever german-shepherd border-collie beagle poodle bulldog dachshund pomeranian shih-tzu rottweiler boxer mixed-breed".split(" ");
+const sh=["pet-shop-mona","luna-pet-shop","pet-shop-palavkovci","pet-shop-delfin","pet-centar"];
+const L=["img/community/Teodora-pp","img/community/Sara-pp","img/community/Nikola-pp","img/community/Dimitar-pp","img/basic-profile","img/furora-logo","img/hero/welcome","img/hero/about",...B.map(x=>"img/breeds/"+x),"img/vets/vet1","img/vets/vet2","img/vets/vet3",...sh.map(x=>"img/shops/"+x),...sh.flatMap(x=>[1,2,3,4].map(i=>`img/products/${x}-${i}`)),...[1,2,3,4,5].map(i=>"img/swap/swap-"+i),"img/dogs/biskvit","img/dogs/puma","img/dogs/mufasa",...[3,8,9,11,12,13,15,17].map(n=>"img/sdg"+n)];
+function cands(f){const m=f.match(/^(.*\/)?([^\/]+)$/),dir=m[1]||"",base=m[2],o=[];[dir,"img/",""].forEach(d=>["jpg","jpeg","png","webp"].forEach(e=>{const p=d+base+"."+e;if(!o.includes(p))o.push(p)}));return o}
+function t(l,ok,no){if(!l.length)return no();const i=new Image();i.onload=()=>ok(l[0]);i.onerror=()=>t(l.slice(1),ok,no);i.src=l[0]}
+L.forEach(f=>{const li=document.createElement("li");li.textContent="… "+f;document.getElementById("l").appendChild(li);t(cands(f),p=>{li.className="ok";li.textContent="✓ "+f+"  (found: "+p+")"},()=>{li.className="no";li.textContent="– "+f+".jpg not found"})});
+</script></body></html>
